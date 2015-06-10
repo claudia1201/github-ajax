@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title></title>
+	<link rel="stylesheet" href="ajax.css">
+</head>
+<body> 
+ <template id = "leftSideUser">
+ 	<img class"avatar_url" src="{{ avatar_url }}" />
+ 	<div class="name ">{{ name }}</div>
+ 	<div class="login">{{ login }}</div>
+ 	<div class="info">
+	 	<div class="company">{{ company }}</div>
+	 	<div class="location"><img src="assets/location.png"/>{{ location }}</div>
+	 	<div class="email"><img src="assets/envelope.png"/> <a href="#">{{ email }}</a> </div>
+	 	<div class="created_at inf"><img src="assets/time.png"/>Joined on {{ created_at }}</div>
+ 	</div>
+ </template>
+ <template id="rightSideUser">
+ 	<div class="name repo icon"> {{ name }}</div>
+ 	<div class="repoInfo icon">
+ 		<span class="language">{{ language }}</span>
+	 	<span class="stargazers_count"><img src="assets/star.png"><a href="#">{{ stargazers_count }}</a></span>
+	 	<span class="network_count"><img src="assets/span.png"><a href="#">{{ network_count }}</a></span>
+ 	</div>
+ 	<div class="description">{{ description }}</div>
+ 	<div class="updated_at">Updated {{ updated_at }}</div>
+ </template>
+
+ <div class="container">
+ 	<div class="header"><img src="assets/header.png"/></div>
+ 	<div class="userBox"></div>
+ 	<div class="sub-header"><img src="assets/sub-header.png"> </div>
+ 	<div class="repoBox"></div>
+
+ </div>
+
+<script src= "libs/jquery.js"></script>
+<script src="libs/underscore.js"></script>
+<script src="libs/handlebars.js"></script>
+<script src="libs/moment.js" "></script>
+<script src="ajax.js"></script>
+</body>
+</html>
