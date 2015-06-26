@@ -7,8 +7,9 @@ $(document).on("ready", function(){
       access_token: "8bae437d64a874e34746afc526c87c9b1de3507f"
     },
     success: function(data) { 
+      console.log(data)
     	var source = $("#leftSideUser").html()
-
+      console.log(source)
     	var templateFunction = Handlebars.compile(source)
 
     	var htmlString = templateFunction({
@@ -20,6 +21,7 @@ $(document).on("ready", function(){
         email: data.email,
         created_at: moment(data.created_at).format("MMMM, DD, YYYY")
       })
+              console.log(htmlString)
 
     	$(".userBox").append(htmlString)
 
