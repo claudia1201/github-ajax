@@ -1,10 +1,10 @@
-Github Profile
+##Github Profile
 
-Description
+###Description
 
 Bringing together concepts: AJAX, APIs, and templating. Taking data from GitHub's API and recreating my profile's "Repositories" page.
 
-Objectives
+###Objectives
 
 After completing this assignment, I felt confident using:
 
@@ -14,7 +14,7 @@ Using and iterating over arrays and objects with JavaScript
 Underscore templating
 HTML and CSS
 
-Details
+###Details
 
 Created a web page that pulls in data from GitHub's API that replicates the content and design on my profile's repository tab. 
 
